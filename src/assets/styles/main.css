@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  background: #0b1d2a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ❄ Сніг (працює, якщо у index.html є <div class="snow"></div>) */
+.snow {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  opacity: 0.45;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.9), transparent),
+    radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(2px 2px at 140px 80px, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1px 1px at 50px 120px, rgba(255, 255, 255, 0.6), transparent);
+  background-size: 220px 220px;
+  animation: snowFall 10s linear infinite;
+}
+
+@keyframes snowFall {
+  from { background-position: 0 0; }
+  to { background-position: 0 220px; }
+}
