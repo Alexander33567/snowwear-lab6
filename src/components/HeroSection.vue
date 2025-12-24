@@ -82,3 +82,4 @@ p {
 }
 .ghost:hover { background: rgba(255, 255, 255, 0.10); }
 </style>
+// lab6 marker 
