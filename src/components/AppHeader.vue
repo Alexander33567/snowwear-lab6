@@ -3,9 +3,9 @@
     <div class="logo">SnowWear</div>
 
     <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">Catalog</a>
-      <a href="#">Login</a>
+<a href="#home">Home</a>
+<a href="#catalog">Catalog</a>
+<a href="#login">Login</a>
     </nav>
   </header>
 </template>
